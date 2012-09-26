@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="automate-rt-in-php" default="unit_testing" basedir=".">
+ <property name="source" value="./class/"/>
+
+ <target name="clean" description="Clean up and create artifact directories.">
+  <delete dir="${basedir}/build/logs"/>
+  <mkdir dir="${basedir}/build/logs"/>
+ </target>
+
+ <target name="phpunit" description="Run unit tests using PHPUnit and generates reports.">
+  <exec executable="phpunit" failonerror="true"/>
+ </target>
+
+ <target name="unit_testing" depends="clean,phpunit"/>
+</project>

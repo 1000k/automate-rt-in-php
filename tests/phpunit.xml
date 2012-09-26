@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<phpunit colors="false"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    strict="true"
+    verbose="true">
+</phpunit>
